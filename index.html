@@ -1,0 +1,47 @@
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <h1 id="title"> Survey Form</h1>
+      <link rel="stylesheet" href="styles.css">
+      <p id="description"> Description</p>
+      </head>
+      <body>
+        <form id="survey-form">
+          <fieldset>
+           <label id="name-label" for="name">Enter your name:<input id="name" type="text" placeholder="Name" required> </input> </label>
+
+          <label id="email-label" for="email">Enter your email:<input id="email" type="email" placeholder="anything@gmail.com" required></input></label>
+
+         <label id="number-label" for="number">Enter your number:<input id="number" type="number" placeholder="XXX-XXX-XXXX" min="1" max="9999999999" required></input></label>
+          </fieldset>
+          <fieldset>
+            <legend> What number are we feeling today</legend>
+            <select id="dropdown">
+              <option>One
+              <option>Two
+              <option>Three
+              
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Are you cooked?</legend>
+              <label for="cooked" ><input type="radio" name="cooked" value="cooked" id="cooked" checked  class="inline" />Cooked</label>
+
+              <label for="not-cooked"><input value="true" name="cooked" value="not-cooked" type="radio" id="not-cooked" class="inline"/>Not cooked</label>
+
+              <label for="extremely-cooked"><input value="true" name="cooked" value="extremely-cooked" type="radio" id="extremely-cooked" class="inline"/>Extremely Cooked</label>
+              </fieldset>
+              <fieldset>
+                <legend>Is this a good website?</legend>
+                <label for="question">
+                <input name="opinions" value="yes" id="question" type="checkbox">Yes</label>
+                <label for="question-2">
+                  <input name="opinions" value="no" type="checkbox" id="question-2"/>No</label>
+                </fieldset>
+                <label for="final">What do you think? 
+                <textarea id="thoughts" name="thoughts" rows="3" cols="30" placeholder="Greatest website..."></textarea>
+
+                <input type="submit" value="Submit" id="submit"/>
+              </form>
+              </body>
+              </html>
